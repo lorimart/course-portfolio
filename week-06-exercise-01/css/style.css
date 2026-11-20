@@ -86,22 +86,26 @@ code {
 }
 
 .nav-simple li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .nav-simple a {
   display: block;
-  padding: 8px 16px;
-  color: #0066CC;
+  padding: 10px 16px;
+  font-family: arial, sans-serif;
+  color: #0f172a;
   text-decoration: none;
-  background-color: #fafafa;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: #f1f5f9;
+  border: 1px solid #0f766e;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-simple a:hover {
-  background-color: #0066CC;
+  background-color: #0f766e;
   color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-simple+main {
@@ -113,9 +117,9 @@ code {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #333333;
+  background-color: #0f172a;
   padding: 0 32px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #0f766e;
   z-index: 1000;
 }
 
@@ -134,28 +138,71 @@ code {
 .nav-horizontal a {
   display: block;
   padding: 16px 0;
+  font-family: arial, sans-serif;
+  letter-spacing: 1px;
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .nav-horizontal a:hover {
-  color: #0066CC;
+  color: #5eead4;
 }
 
 .nav-horizontal+main {
   margin-top: 80px;
 }
 
-.nav-custom {}
+.nav-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #e2e8f0;
+  padding: 14px 32px;
+  border-bottom: 3px solid #0f766e;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+}
 
-.nav-custom ul {}
+.nav-custom ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-.nav-custom li {}
+.nav-custom li {
+  margin-bottom: 0;
+}
 
-.nav-custom a {}
+.nav-custom a {
+  display: block;
+  padding: 8px 22px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background-color: #0f766e;
+  text-decoration: none;
+  border: 1px solid #0f172a;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
 
-.nav-custom a:hover {}
+.nav-custom a:hover {
+  background-color: #0f172a;
+  color: #5eead4;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+.nav-custom + main {
+  margin-top: 100px;
+}
+
+
 
 @media (width >=480px) {}
 
